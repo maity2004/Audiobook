@@ -1,0 +1,101 @@
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Container */
+div {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 30px 40px;
+  border-radius: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Heading with dual color */
+h1 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  background: linear-gradient(to right, #ffeb3b, #00e5ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Textarea */
+textarea {
+  width: 100%;
+  height: 150px;
+  padding: 15px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 12px;
+  resize: none;
+  outline: none;
+  margin-bottom: 25px;
+  background-color: #ffffffee;
+  color: #333;
+}
+
+/* Select dropdown */
+select {
+  padding: 10px 15px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  background-color: #ffffff;
+  color: #333;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+/* Buttons group */
+button {
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: none;
+  margin: 8px 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Individual button colors */
+#playBtn {
+  background-color: #ff9800;
+}
+#playBtn:hover {
+  background-color: #fb8c00;
+}
+
+#pauseBtn {
+  background-color: #e53935;
+}
+#pauseBtn:hover {
+  background-color: #c62828;
+}
+
+#resumeBtn {
+  background-color: #43a047;
+}
+#resumeBtn:hover {
+  background-color: #2e7d32;
+}
