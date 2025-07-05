@@ -2,23 +2,32 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Text to Speech</title>
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PDF to Audiobook</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.4.120/pdf.min.js"></script>
 </head>
 
 <body>
+    <div class="container">
+        <h1>📚 Audiobook</h1>
 
-    <div>
-        <h1>Text to Speech Converter</h1>
-        <textarea placeholder="Write anything here..."></textarea>
+        <div class="text-section">
+            <input type="file" id="pdfUpload" accept="application/pdf" />
+            <textarea id="textArea" placeholder="Extracted text from PDF will appear here..."></textarea>
+        </div>
 
-        <div>
-            <select></select>
-            <button id="playBtn">Listen</button>
-            <button id="pauseBtn">Pause</button>
-            <button id="resumeBtn">Resume</button>
+
+        <div class="controls">
+            <label for="voiceSelect">Choose Voice:</label>
+            <select id="voiceSelect"></select>
+        </div>
+
+        <div class="buttons">
+            <button id="playBtn">▶️ Play</button>
+            <button id="pauseBtn">⏸️ Pause</button>
+            <button id="resumeBtn">🔁 Resume</button>
         </div>
     </div>
 
